@@ -8,16 +8,16 @@ CalorieCounter calorieCounter1 = new CalorieCounter();
 
 void setup() {
   size(400,400);
-  //Call the displayText function, with the CalorieCounter instance
+  //Call the displayText method, with the CalorieCounter instance
   calorieCounter1.displayText();
 }
 
 void draw() {
-  // Call the design function, with the CalorieCounter instance
+  // Call the design method, with the CalorieCounter instance
   calorieCounter1.design();
 }
 
 void keyPressed() {
-  // Call the userInput function, with the CalorieCounter instance
+  // Call the userInput method, with the CalorieCounter instance
   calorieCounter1.userInput();
 }
