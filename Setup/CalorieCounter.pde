@@ -5,11 +5,11 @@ ArrayList<Integer> check = new ArrayList<Integer>();
 class CalorieCounter {
   int totalCalories = 0;
 
-  // Display text on screen
+  // Display text 
   void displayText() {
     background(255);
 
-    // Add the food and their calories
+    // Add food and calories
     addFood("Skyr", 59);
     addFood("Bær", 50);
     addFood("Bagel", 150);
@@ -21,12 +21,12 @@ class CalorieCounter {
     addFood("Ris", 200);
   }
 
-  // Method that draws the display
+  // Draw the display
   void design() {
     fill(0);
     displayFoodOptions();
 
-    //Draw rectangles on top and bottom to make the counter less boring
+    //Draw rectangles on top and bottom 
     rectMode(CENTER);
     stroke(255);
     fill(30, 215, 96);
@@ -34,15 +34,15 @@ class CalorieCounter {
     rect(200, 375, 410, 50);
 
 
-    // Display the total calorie count
+    // Display total calorie count
     textSize(20);
     fill(0);
     text("Total Calories: " + totalCalories, 130, 380);
     
-    // Fill color for progress bar indicating total calories
+    // Fill color for progress bar 
     fill(255, 165, 0);
     
-    // Draw the progress bar
+    // Draw progress bar
     rect(0, 325, totalCalories/3, 25);
 
     // Display a message if the calorie goal is reached
@@ -53,7 +53,7 @@ class CalorieCounter {
     }
   }
 
-  // Method to check userInput
+  // Check userInput
   void userInput() {
     
     // Check if the key pressed is a valid number
